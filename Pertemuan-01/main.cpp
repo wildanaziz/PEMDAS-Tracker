@@ -14,27 +14,27 @@ int main() {
     int input_tax;
 
     // Input Soal Nomor 1
-    cout << "soal nomor 1\n";
-    cout << "masukkan operator pertama: " ;
+    cout << "Masukkan operator pertama: ";
     cin>> input_1;
-    cout << "masukkan operator kedua: " ;
+    cout << "Masukkan operator kedua: " ;
     cin>> input_2;
 
     // Input Soal Nomor 2
-    cout << "\nsoal nomor 2\n";
+    cout << "Program penghitung pemakaian listrik sederhana\n";
     cin.get();
-    cout << "masukkan nama: " ;
+    cout << "Masukkan nama: ";
+
     // penggunaan getline agar bisa lebih dari 1 kata
     getline(cin, input_name);
-    cout << "kelurahan: " ;
+    cout << "Kelurahan: " ;
     getline(cin, input_out);
-    cout << "masukkan posisi awal KwH meter: " ;
+    cout << "Masukkan posisi awal KwH meter: ";
     cin>> input_first_kwh;
-    cout << "masukkan posisi akhir KwH meter: " ;
+    cout << "Masukkan posisi akhir KwH meter: ";
     cin >> input_last_kwh;
-    cout << "masukkan biaya beban saat ini: ";
+    cout << "Masukkan biaya beban saat ini: ";
     cin>> input_cost_now;
-    cout << "masukkan pajak: ";
+    cout << "Masukkan pajak: ";
     cin>> input_tax;
 
     // Menjalakan Tugas untuk Soal Nomor 1
@@ -51,10 +51,10 @@ int main() {
     int real_cost = recent_cost + tax;
 
     // Output Soal Nomor 1
-    cout << "\nhasil pertambahan: " << add << endl;
-    cout << "hasil pengurangan: " << substract << endl;
-    cout << "hasil perkalian: " << multi << endl;
-    cout << "hasil pembagian: " << div << endl;
+    cout << "Hasil pertambahan: " << add << endl;
+    cout << "Hasil pengurangan: " << substract << endl;
+    cout << "Hasil perkalian: " << multi << endl;
+    cout << "Hasil pembagian: " << div << endl;
 
     // Output Soal Nomor 2
     cout << "===================PLN " << input_out << "===================" << endl;
@@ -64,6 +64,7 @@ int main() {
     cout << "Tarif Listrik: " << " Rp " << recent_cost << ",-" << endl;
     cout << "PPJ 10%: " << " Rp " << tax << ",-" << endl;
     cout << "Total Bayar : " << " Rp " << real_cost << ",-" << endl;
+    cout << "================================================";
 
     return 0;
 }
