@@ -8,6 +8,8 @@ int main() {
     float input_2;
     string input_name;
     string input_out;
+    string input_name_2;
+    string input_nim;
     int input_first_kwh;
     int input_last_kwh;
     int input_cost_now;
@@ -18,6 +20,18 @@ int main() {
     cin>> input_1;
     cout << "Masukkan operator kedua: " ;
     cin>> input_2;
+
+    // Menjalakan Tugas untuk Soal Nomor 1
+    int add = input_1 + input_2;
+    int substract = input_1 - input_2;
+    int multi = input_1 * input_2;
+    float div = input_1 / input_2;
+
+    // Output Soal Nomor 1
+    cout << "Hasil pertambahan: " << add << endl;
+    cout << "Hasil pengurangan: " << substract << endl;
+    cout << "Hasil perkalian: " << multi << endl;
+    cout << "Hasil pembagian: " << div << endl << endl;
 
     // Input Soal Nomor 2
     cout << "Program penghitung pemakaian listrik sederhana\n";
@@ -37,11 +51,6 @@ int main() {
     cout << "Masukkan pajak: ";
     cin>> input_tax;
 
-    // Menjalakan Tugas untuk Soal Nomor 1
-    int add = input_1 + input_2;
-    int substract = input_1 - input_2;
-    int multi = input_1 * input_2;
-    float div = input_1 / input_2;
     
     // Menjalankan Tugas untuk Soal Nomor 2
     int recent_month = input_last_kwh - input_first_kwh;
@@ -50,11 +59,6 @@ int main() {
     int tax = recent_cost * count_tax;
     int real_cost = recent_cost + tax;
 
-    // Output Soal Nomor 1
-    cout << "Hasil pertambahan: " << add << endl;
-    cout << "Hasil pengurangan: " << substract << endl;
-    cout << "Hasil perkalian: " << multi << endl;
-    cout << "Hasil pembagian: " << div << endl;
 
     // Output Soal Nomor 2
     cout << "===================PLN " << input_out << "===================" << endl;
@@ -64,7 +68,15 @@ int main() {
     cout << "Tarif Listrik: " << " Rp " << recent_cost << ",-" << endl;
     cout << "PPJ 10%: " << " Rp " << tax << ",-" << endl;
     cout << "Total Bayar : " << " Rp " << real_cost << ",-" << endl;
-    cout << "================================================";
+    cout << "================================================" << endl << endl;
+
+    cin.get();
+    cout << "Masukkan Nama User: ";
+    getline(cin, input_name_2);
+    cout << "Masukkan NIM User: ";
+    cin >> input_nim;
+    cout << "Nama: " << input_name_2 << endl;
+    cout << "NIM: " << input_nim << endl;
 
     return 0;
 }
