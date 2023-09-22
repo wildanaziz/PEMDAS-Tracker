@@ -10,11 +10,15 @@ int main() {
     int input_first_kwh;
     int input_last_kwh;
     int input_cost_now;
+    int input_tax;
 
+    cout << "soal nomor 1\n";
     cout << "masukkan operator pertama: " ;
     cin>> input_1;
     cout << "masukkan operator kedua: " ;
     cin>> input_2;
+
+    cout << "\nsoal nomor 2\n";
     cin.get();
     cout << "masukkan nama: " ;
     getline(cin, input_name);
@@ -26,7 +30,9 @@ int main() {
     cin >> input_last_kwh;
     cout << "masukkan biaya beban saat ini: ";
     cin>> input_cost_now;
-    
+    cout << "masukkan pajak: ";
+    cin>> input_tax;
+
     int add = input_1 + input_2;
     int substract = input_1 - input_2;
     int multi = input_1 * input_2;
@@ -34,7 +40,8 @@ int main() {
     
     int recent_month = input_last_kwh - input_first_kwh;
     int recent_cost = recent_month * input_cost_now;
-    int tax = recent_cost * (10.0/100.0);
+    float count_tax = input_tax / 100.0;
+    int tax = recent_cost * count_tax;
     int real_cost = recent_cost + tax;
 
     cout << "hasil pertambahan: " << add << endl;
