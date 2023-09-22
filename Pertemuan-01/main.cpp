@@ -44,10 +44,11 @@ int main() {
     int tax = recent_cost * count_tax;
     int real_cost = recent_cost + tax;
 
-    cout << "hasil pertambahan: " << add << endl;
+    cout << "\nhasil pertambahan: " << add << endl;
     cout << "hasil pengurangan: " << substract << endl;
     cout << "hasil perkalian: " << multi << endl;
-    cout << "hasil pembagian: " << div << endl << endl;
+    cout << "hasil pembagian: " << div << endl;
+    cout << "===================PLN " << input_out << "===================" << endl;
     cout << "Nama: " << input_name << endl;
     cout << "Kelurahan: " << input_out << endl;
     cout << "Pemakaian bulan ini: " << recent_month << " KwH meter" << endl;
