@@ -7,7 +7,7 @@ int main() {
     float input_1;
     float input_2;
     string input_name;
-    string input_out;
+    char input_out[155];
     string input_name_2;
     string input_nim;
     int input_first_kwh;
@@ -41,7 +41,7 @@ int main() {
     // penggunaan getline agar bisa lebih dari 1 kata
     getline(cin, input_name);
     cout << "Kelurahan: " ;
-    getline(cin, input_out);
+    gets(input_out);
     cout << "Masukkan posisi awal KwH meter: ";
     cin>> input_first_kwh;
     cout << "Masukkan posisi akhir KwH meter: ";
@@ -60,8 +60,9 @@ int main() {
     int real_cost = recent_cost + tax;
 
 
-    // Output Soal Nomor 2
-    cout << "===================PLN " << input_out << "===================" << endl;
+    // Output Soal Nomor 
+    
+    cout << "===================PLN " << input_out << "===================" << chr << endl;
     cout << "Nama: " << input_name << endl;
     cout << "Kelurahan: " << input_out << endl;
     cout << "Pemakaian bulan ini: " << recent_month << " KwH meter" << endl;
