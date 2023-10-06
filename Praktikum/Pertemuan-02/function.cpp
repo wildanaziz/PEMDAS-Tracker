@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <limits>
 // memanggil header agar bisa menjalankan fungsi void question_01() question_02() & question_03()
 #include "function.h"
 
@@ -80,10 +81,13 @@ void question_02() {
     cout << "\nBerat badan (kg): ";
     // looping ketika user menginputkan bukan angka tapi string
     while (!(cin >> input_weight))
-    {
-        cout << "masukkan angka kembali: ";
+    {//looping ketika user memasukkan bukan angka
+        cout << "masukkan dengan angka : ";
+        //menghapus kesalahan input pada user
         cin.clear();
-        cin.ignore(1);
+        // mengekstrak dan membuang seluruh karakter dan delimeter dari input 
+        // dan "\n" untuk melompati agar tidak terjadi looping berulang-ulang
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
 
     cout << "Tinggi Badan (m): ";
@@ -133,12 +137,14 @@ void question_03() {
     // Input Tugas Nomor 3
     cout << "Jam Kerja: ";
     while (!(cin >> input_work_hour))
-    {
-        cout << "masukkan angka bukan string: ";
+    {//looping ketika user memasukkan bukan angka
+        cout << "masukkan dengan angka: ";
+        //menghapus kesalahan input pada user
         cin.clear();
-        cin.ignore(1);
-
-    }
+        // mengekstrak dan membuang seluruh karakter dan delimeter dari input 
+        // dan "\n" untuk melompati agar tidak terjadi looping berulang-ulang
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }    
 
     // Assignment Tugas Nomor 3
     work_1_condition = input_work_hour > 60;
