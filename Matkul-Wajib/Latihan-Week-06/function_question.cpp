@@ -11,7 +11,8 @@ using namespace std;
 // fungsi soal nomor 01
 void question_01() {
     //deklarasi
-    int input_cost, cost, real_cost;
+    int input_cost, real_cost;
+    float cost;
 
     // input nomor 01 memasukkan harga
     cout << "Soal Nomor 01" << endl;
@@ -70,8 +71,6 @@ void question_01() {
 void question_02() {
     // deklarasi
     string input_type;
-    string input_division;
-    string input_major;
 
     //input no 2 masukkan kode prodi
     cout << "Soal Nomor 02" << endl;
@@ -211,7 +210,6 @@ void question_03() {
 // fungsi soal nomor 04
 void question_04() {
     //deklarasi
-    string input_type;
     string input_division;
     string input_major;
 
@@ -283,7 +281,7 @@ void question_04() {
 void question_05() {
     //deklarasi
     int package, input_list_package, input_package, big_package, small_package, big_package_cost, small_package_cost, calculate_package_cost;
-    int package_check, buy_package, package_remain, buy_check;
+    int buy_package, package_remain;
     string agent_name;
 
     //Assignment Latihan Nomor 5
