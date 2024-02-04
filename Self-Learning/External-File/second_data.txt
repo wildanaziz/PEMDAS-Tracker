@@ -1,0 +1,12 @@
+
+Cetak data pertama
+Cetak data kedua
+Cetak data kedua
+
+No  Nama
+1   Wildan
+2   Aziz
+3   Hidayat
+4   Bambang
+5   Agus
+Cetak data kedua
